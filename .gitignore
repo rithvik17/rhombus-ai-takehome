@@ -13,3 +13,4 @@ credentials.json
 service-account*.json
 auth.json
 storage-state.json
+*.key
