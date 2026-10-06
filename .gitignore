@@ -1,0 +1,15 @@
+.env
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+playwright-report/
+test-results/
+*.pyc
+.DS_Store
+credentials.json
+*.pem
+*.json.key
+service-account*.json
+auth.json
+storage-state.json
