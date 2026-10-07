@@ -1,0 +1,23 @@
+
+Determinism Validation
+======================================================================
+
+File:   cleaned_orders_export_1791375163539.csv
+Rows:   19
+Cols:   8
+SHA256: 3870e4d6fbc4c347e8127e94048c6eed1789df9f129eb62d13d8c9e7a90b7b79
+
+File:   cleaned_orders_export_1791375170728.csv
+Rows:   19
+Cols:   8
+SHA256: 3870e4d6fbc4c347e8127e94048c6eed1789df9f129eb62d13d8c9e7a90b7b79
+
+Comparison
+======================================================================
+Schema identical:      PASS
+Row counts identical:  PASS
+Cell content identical: PASS
+Byte-for-byte identical: PASS
+
+======================================================================
+PASS: Outputs are deterministic across repeated runs.
