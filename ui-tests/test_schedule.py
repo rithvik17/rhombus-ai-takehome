@@ -192,7 +192,7 @@ def test_create_schedule():
         active_switch = page.get_by_role(
             "switch",
             name="Deactivate schedule",
-        )
+        ).first
 
         expect(active_switch).to_be_visible()
         expect(active_switch).to_be_checked()
