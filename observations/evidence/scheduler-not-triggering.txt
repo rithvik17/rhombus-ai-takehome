@@ -1,0 +1,26 @@
+Scheduler Failure Evidence
+==========================
+
+Configuration:
+A pipeline schedule was successfully created and displayed as Active.
+
+UI behaviour:
+- A next-run time was initially displayed.
+- At the scheduled trigger time, the next-run value disappeared.
+- No successful or failed execution appeared in Schedule History.
+- No new output was produced in GCS.
+
+Control test:
+Running the same pipeline manually succeeded and produced the expected GCS
+output.
+
+This behaviour was reproduced using multiple schedule configurations,
+including custom recurring schedules.
+
+Rhombus support response:
+"You should report this as a bug."
+
+Conclusion:
+Scheduling could be configured successfully in the UI, but scheduled
+execution did not occur. For this reason, drift experiments were executed
+manually and the scheduling limitation is documented explicitly.

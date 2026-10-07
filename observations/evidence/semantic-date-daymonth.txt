@@ -1,0 +1,38 @@
+Semantic Date Drift Evidence
+============================
+
+Drift:
+Input dates were changed from ISO YYYY-MM-DD to DD/MM/YYYY.
+
+Validator configuration:
+--input-date-format "%d/%m/%Y"
+
+Rhombus pipeline:
+SUCCESS
+
+Pipeline warning:
+None
+
+Output shape:
+19 rows x 8 columns
+
+Cleaning validation:
+PASS
+
+Cell differences from intended output:
+11
+
+Semantic date differences from canonical baseline:
+11
+
+Example interpretation error:
+Intended: 2026-09-01
+Actual:   2026-01-09
+
+Ambiguous DD/MM dates were interpreted month-first. Dates where the day
+exceeded 12 remained unambiguous, which is why 11 rather than all 19 rows
+differed.
+
+Conclusion:
+The pipeline completed successfully but silently changed the meaning of
+ambiguous dates.

@@ -1,0 +1,32 @@
+Schema Type-Change Evidence
+===========================
+
+Drift:
+quantity values were changed from numeric values to strings such as "2 units".
+
+Pipeline result:
+FAILED at valid_quantity_orders.
+
+Error:
+'<=' not supported between instances of 'str' and 'int'
+
+AI Builder diagnosis:
+The assistant correctly identified that quantity needed to be converted to
+numeric before comparison and stated that it had updated the transformation
+to use pd.to_numeric(..., errors='coerce').
+
+Repair verification:
+Re-running the pipeline produced the same failure.
+
+Backend inspection also showed that the natural-language transformation
+description had changed, while the executable transformation still contained:
+
+    quantity_invalid = input_df_1['quantity'] <= 0
+
+The executable transformation hash remained:
+
+    be121b681ccf
+
+Conclusion:
+The UI/AI Builder reported the transformation as fixed, but the effective
+executable code was not updated.

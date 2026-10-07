@@ -1,0 +1,30 @@
+Semantic Price Drift Evidence
+=============================
+
+Drift:
+unit_price_usd values were multiplied by 100 while preserving the same
+column name, numeric type, and schema.
+
+Rhombus pipeline:
+SUCCESS
+
+Pipeline warning:
+None
+
+Structural validation:
+Schema: PASS
+Row count: PASS
+Cleaning rules: PASS
+
+Semantic validation against canonical baseline:
+FAIL
+
+Affected values:
+19 / 19 matched orders
+
+Observed relationship:
+drifted_price / baseline_price = 100
+
+Conclusion:
+The pipeline successfully processed structurally valid data while silently
+propagating a major semantic unit change.

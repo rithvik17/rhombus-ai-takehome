@@ -1,0 +1,52 @@
+Schema Type-Change Repair Verification
+======================================
+
+Initial failure
+---------------
+Drift:
+quantity values were changed from numeric values to strings such as "2 units".
+
+Pipeline result:
+FAILED at valid_quantity_orders.
+
+Error:
+'<=' not supported between instances of 'str' and 'int'
+
+AI Builder repair claim
+-----------------------
+AI Builder diagnosed the issue correctly and stated:
+
+- quantity was arriving as string/object dtype
+- the original comparison quantity <= 0 caused the failure
+- valid_quantity_orders had been fixed to call
+  pd.to_numeric(..., errors='coerce') before the comparison
+
+A screenshot of this response is stored separately as:
+schema-type-change-chatbot.png
+
+Rerun result
+------------
+After the claimed repair, the pipeline was executed again.
+
+Result:
+FAILED again at the same valid_quantity_orders transformation.
+
+Error:
+'<=' not supported between instances of 'str' and 'int'
+
+Executable-code verification
+----------------------------
+Backend inspection showed that the transformation description had changed,
+but the effective executable code still contained:
+
+    quantity_invalid = input_df_1['quantity'] <= 0
+
+The executable code hash remained:
+
+    be121b681ccf
+
+Conclusion
+----------
+The assistant correctly diagnosed the schema drift and reported the issue as
+fixed, but the effective executable transformation was not updated. The rerun
+therefore failed with the same type-comparison error.
