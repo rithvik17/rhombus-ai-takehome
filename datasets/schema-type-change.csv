@@ -1,0 +1,22 @@
+order_id,customer_email,product_name,quantity,unit_price_usd,order_date,country,status
+1001,JOHN@example.com, Laptop Stand ,2 units,35.5,2026-09-01,Australia,COMPLETED
+1002,sara@example.com,Wireless Mouse,1 units,24.99,2026-09-02,australia,completed
+1003,,USB-C Cable,3 units,12.0,2026-09-03,Australia,PENDING
+1004,mike@example.com, Keyboard ,1 units,79.0,2026-09-04,AUSTRALIA,Completed
+1005,amy@example.com,Webcam,2 units,89.0,2026-09-05,Australia,completed
+1006,LIAM@example.com, Monitor Stand ,1 units,44.5,2026-09-06,australia,PENDING
+1007,noah@example.com,Laptop Sleeve,2 units,29.95,2026-09-07,Australia,Completed
+1008,olivia@example.com,USB Hub,1 units,39.99,2026-09-08,AUSTRALIA,COMPLETED
+1009,emma@example.com, HDMI Cable ,3 units,14.5,2026-09-09,Australia,pending
+1010,james@example.com,Mechanical Keyboard,1 units,119.0,2026-09-10,australia,Completed
+1011,sophia@example.com,Wireless Charger,2 units,42.0,2026-09-11,Australia,COMPLETED
+1012,ethan@example.com,Desk Mat,1 units,25.0,2026-09-12,AUSTRALIA,pending
+1013,mia@example.com,Webcam Cover,4 units,8.5,2026-09-13,Australia,Completed
+1014,lucas@example.com,USB-C Adapter,2 units,18.0,2026-09-14,australia,COMPLETED
+1015,ava@example.com, Laptop Stand ,1 units,35.5,2026-09-15,Australia,pending
+1016,henry@example.com,Bluetooth Speaker,1 units,69.0,2026-09-16,AUSTRALIA,Completed
+1017,isla@example.com,Portable SSD,2 units,129.0,2026-09-17,Australia,COMPLETED
+1018,leo@example.com,Mouse Pad,3 units,16.5,2026-09-18,australia,pending
+1019,grace@example.com,USB-C Cable,-1 units,12.0,2026-09-19,Australia,completed
+1020,jack@example.com,Headphones,1 units,95.0,2026-09-20,AUSTRALIA,Completed
+1004,mike@example.com, Keyboard ,1 units,79.0,2026-09-04,AUSTRALIA,Completed

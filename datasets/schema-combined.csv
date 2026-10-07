@@ -1,0 +1,22 @@
+order_id,product_name,quantity,unit_price_usd,order_date,country,order_status,sales_channel
+1001, Laptop Stand ,2 units,35.5,2026-09-01,Australia,COMPLETED,online
+1002,Wireless Mouse,1 units,24.99,2026-09-02,australia,completed,store
+1003,USB-C Cable,3 units,12.0,2026-09-03,Australia,PENDING,marketplace
+1004, Keyboard ,1 units,79.0,2026-09-04,AUSTRALIA,Completed,online
+1005,Webcam,2 units,89.0,2026-09-05,Australia,completed,store
+1006, Monitor Stand ,1 units,44.5,2026-09-06,australia,PENDING,marketplace
+1007,Laptop Sleeve,2 units,29.95,2026-09-07,Australia,Completed,online
+1008,USB Hub,1 units,39.99,2026-09-08,AUSTRALIA,COMPLETED,store
+1009, HDMI Cable ,3 units,14.5,2026-09-09,Australia,pending,marketplace
+1010,Mechanical Keyboard,1 units,119.0,2026-09-10,australia,Completed,online
+1011,Wireless Charger,2 units,42.0,2026-09-11,Australia,COMPLETED,store
+1012,Desk Mat,1 units,25.0,2026-09-12,AUSTRALIA,pending,marketplace
+1013,Webcam Cover,4 units,8.5,2026-09-13,Australia,Completed,online
+1014,USB-C Adapter,2 units,18.0,2026-09-14,australia,COMPLETED,store
+1015, Laptop Stand ,1 units,35.5,2026-09-15,Australia,pending,marketplace
+1016,Bluetooth Speaker,1 units,69.0,2026-09-16,AUSTRALIA,Completed,online
+1017,Portable SSD,2 units,129.0,2026-09-17,Australia,COMPLETED,store
+1018,Mouse Pad,3 units,16.5,2026-09-18,australia,pending,marketplace
+1019,USB-C Cable,-1 units,12.0,2026-09-19,Australia,completed,online
+1020,Headphones,1 units,95.0,2026-09-20,AUSTRALIA,Completed,store
+1004, Keyboard ,1 units,79.0,2026-09-04,AUSTRALIA,Completed,marketplace
