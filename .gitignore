@@ -14,3 +14,4 @@ service-account*.json
 auth.json
 storage-state.json
 *.key
+playwright/.auth/
